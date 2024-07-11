@@ -1,14 +1,5 @@
 <template>
-  <div>
-    <header-comp/>
-  </div>
+  <NuxtLayout>
+    <NuxtPage/>
+  </NuxtLayout>
 </template>
-
-<script setup>
-
-import { HeaderComp } from "~/widgets";
-</script>
-
-<style scoped>
-
-</style>
