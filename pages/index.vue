@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="2xl:w-[1440px] mx-auto">
     <header-comp/>
   </div>
 </template>
