@@ -1,4 +1,4 @@
-import HeaderComp from "~/widgets/header-comp/header-comp.vue";
+import HeaderComp from "~/widgets/header-comp/index.vue";
 
 export {
     HeaderComp

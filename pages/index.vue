@@ -1,7 +1,8 @@
 <template>
-  <div class="2xl:w-[1440px] mx-auto">
+  <div>
     <header-comp/>
   </div>
+  <!--  class=" mx-auto"-->
 </template>
 
 <script setup>
