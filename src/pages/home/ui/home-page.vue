@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { HeaderComp } from "~/widgets";
-import { Swiper } from "~/features";
+import { HeaderComp } from "~/src/widgets/index.js";
+import { Swiper } from "~/src/features/index.js";
 
 </script>

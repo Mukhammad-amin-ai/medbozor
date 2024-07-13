@@ -2,8 +2,15 @@
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     modules: ['nuxt-swiper'],
+    alias: {
+        "@": '../src'
+    },
     devtools: {enabled: true},
-    css: ['~/app/style/index.css'],
+    css: ['@/app/style/index.css'],
+    dir: {
+        pages: './src/app/routes',
+        layouts: './src/app/layouts'
+    },
     postcss: {
         plugins: {
             tailwindcss: {},

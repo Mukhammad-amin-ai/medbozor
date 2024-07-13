@@ -1,6 +1,5 @@
 <template>
-  <div
-      class="bg-[#EAF2FF] bg-[url('~/app/assets/images/background/bg-swiper.svg')] bg-no-repeat bg-center lg:bg-cover">
+  <div class="bg-[#EAF2FF] bg-[url('@/app/assets/images/background/bg-swiper.svg')] bg-no-repeat bg-center lg:bg-cover">
     <div class="2xl:w-[1440px] mx-auto ">
       <swiper
           :cssMode="true"
@@ -56,8 +55,8 @@
 </template>
 
 <script setup>
-import { productMask } from "~/app/assets/images/index.js";
-import { Button } from "~/shared/buttons/index.js";
+import { productMask } from "@/app/assets/images/index.js";
+import { Button } from "@/shared/buttons/index.js";
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
