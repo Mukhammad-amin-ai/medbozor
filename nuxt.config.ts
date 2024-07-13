@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
+    modules: ['nuxt-swiper'],
     devtools: {enabled: true},
     css: ['~/app/style/index.css'],
     postcss: {
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             script: [
-                { src: 'https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js' },
+                {src: 'https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js'},
             ],
         },
     },

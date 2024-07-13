@@ -44,8 +44,8 @@
         </form>
       </div>
       <div class="flex items-center gap-5">
-        <Button :icon="cart" text="My cart" color="#1272CC" textColor="#fff" />
-        <Button :icon="user" text="Sign int" color="transparent" textColor="#9DADCB" />
+        <Button :icon="cart" text="My cart" color="#1272CC" textColor="#fff"/>
+        <Button :icon="user" text="Sign int" color="transparent" textColor="#9DADCB"/>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@
 
 <script setup>
 import { logo } from '~/app/assets/images/index.js'
-import { category, search,cart,user } from '~/app/assets/icons/index.js'
+import { category, search, cart, user } from '~/app/assets/icons/index.js'
 import { Button } from "~/shared/buttons/index.js";
 
 </script>
