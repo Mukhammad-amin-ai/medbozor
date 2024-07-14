@@ -1,3 +1,3 @@
-import adds from "./adds.vue";
+import Adds from "./adds.vue";
 
-export { adds };
+export { Adds };

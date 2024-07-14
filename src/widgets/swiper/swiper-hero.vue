@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#EAF2FF] bg-[url('../../shared/utils/images/background/bg-swiper.svg')] bg-no-repeat bg-center lg:bg-cover">
+  <div class="bg-[#F6F9FE] ">
     <div class="2xl:w-[1440px] mx-auto ">
       <swiper
           :cssMode="true"
@@ -10,7 +10,7 @@
           :modules="modules"
           class="h-[424px]"
       >
-        <swiper-slide class="justify-center" style="display: flex !important;">
+        <swiper-slide class="justify-center bg-[url('../../shared/utils/images/background/bg-swiper.svg')] bg-no-repeat bg-center lg:bg-cover" style="display: flex !important;">
           <div class="w-[85%] flex">
             <div class="w-[50%] mt-10 relative">
               <div class="font-medium text-[#1272CC] ">CATEGORY</div>
@@ -23,12 +23,12 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide class="justify-center" style="display: flex !important;">
+        <swiper-slide class="justify-center bg-[url('../../shared/utils/images/background/bg-swiper.svg')] bg-no-repeat bg-center lg:bg-cover" style="display: flex !important;">
           <div class="w-[85%] flex">
             <div class="w-[50%] mt-10 relative">
               <div class="font-medium text-[#1272CC] ">CATEGORY</div>
               <div class="text-[65px]">Face Mask Thermometer</div>
-              <div class="">Model: 18086-1</div>
+              <div class="mb-3">Model: 18086-1</div>
               <Button title="Batafsil ko’rish" color="#fff" bg-color="#1272CC"/>
             </div>
             <div class="w-[50%] relative flex items-center justify-center">
@@ -36,12 +36,12 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide class="justify-center" style="display: flex !important;">
+        <swiper-slide class="justify-center bg-[url('../../shared/utils/images/background/bg-swiper.svg')] bg-no-repeat bg-center lg:bg-cover" style="display: flex !important;">
           <div class="w-[85%] flex">
             <div class="w-[50%] mt-10 relative">
               <div class="font-medium text-[#1272CC] ">CATEGORY</div>
               <div class="text-[65px]">Face Mask Thermometer</div>
-              <div class="">Model: 18086-1</div>
+              <div class="mb-3">Model: 18086-1</div>
               <Button title="Batafsil ko’rish" color="#fff" bg-color="#1272CC"/>
             </div>
             <div class="w-[50%] relative flex items-center justify-center">

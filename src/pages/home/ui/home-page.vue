@@ -1,13 +1,14 @@
 <template>
   <div>
-    <header-comp/>
+    <HeaderComp/>
     <SwiperComp/>
-    <adds/>
+    <Adds/>
+    <CategoryComp/>
   </div>
 </template>
 
 <script setup>
-import { HeaderComp,SwiperComp } from "@/widgets";
-import { adds } from '@/shared/adds'
+import { HeaderComp, SwiperComp, CategoryComp } from "@/widgets";
+import { Adds } from '@/shared/adds'
 
 </script>
