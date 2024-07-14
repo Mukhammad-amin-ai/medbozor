@@ -47,8 +47,8 @@
 </template>
 
 <script setup>
-import { call, shipping, heart } from "@/app/assets/icons/index.js";
-import { uz, ru, eng } from '@/app/assets/images/index.js'
+import { call, shipping, heart } from "@/shared/utils/images/index.js";
+import { uz, ru, eng } from '@/shared/utils/images/index.js'
 import { onMounted } from "vue";
 
 let getterLang = ref({

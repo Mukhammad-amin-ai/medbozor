@@ -52,8 +52,8 @@
 </template>
 
 <script setup>
-import { logo } from '@/app/assets/images/index.js'
-import { category, search, cart, user } from '@/app/assets/icons/index.js'
+import { logo } from '@/shared/utils/images/index.js'
+import { category, search, cart, user } from '@/shared/utils/images/index.js'
 import { ButtonWithIcon } from "@/shared/buttons/index.js";
 
 </script>

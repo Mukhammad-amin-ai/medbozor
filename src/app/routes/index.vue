@@ -5,9 +5,7 @@
 </template>
 
 <script setup>
-import { HomePage } from "@/pages/home/index.ts";
-
-
+import HomePage from "@/pages/home/index.js";
 </script>
 
 <style scoped>

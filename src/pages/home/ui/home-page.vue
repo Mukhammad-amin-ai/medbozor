@@ -1,13 +1,13 @@
 <template>
   <div>
     <header-comp/>
-    <Swiper/>
+    <SwiperComp/>
+    <adds/>
   </div>
-  <!--  class=" mx-auto"-->
 </template>
 
 <script setup>
-import { HeaderComp } from "~/src/widgets/index.js";
-import { Swiper } from "~/src/features/index.js";
+import { HeaderComp,SwiperComp } from "@/widgets";
+import { adds } from '@/shared/adds'
 
 </script>
