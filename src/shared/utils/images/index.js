@@ -31,7 +31,9 @@ import catProduct15 from './category/mebel.svg'
 import catProduct16 from './category/ulchov.svg'
 import catProduct17 from './category/talim.svg'
 import catProduct18 from './category/travmotologiya.svg'
-
+import elipsHat from './adds/icon-hat.svg'
+import elipsPlus from './adds/icon-plus.svg'
+import elipsEngeener from './adds/icons-engineer.svg'
 
 export {
     uz,
@@ -66,5 +68,8 @@ export {
     catProduct15,
     catProduct16,
     catProduct17,
-    catProduct18
+    catProduct18,
+    elipsHat,
+    elipsPlus,
+    elipsEngeener
 }

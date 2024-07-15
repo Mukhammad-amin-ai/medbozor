@@ -4,11 +4,12 @@
     <SwiperComp/>
     <Adds/>
     <CategoryComp/>
+    <AddsSecond/>
   </div>
 </template>
 
 <script setup>
 import { HeaderComp, SwiperComp, CategoryComp } from "@/widgets";
-import { Adds } from '@/shared/adds'
+import { Adds, AddsSecond } from '@/shared/adds'
 
 </script>

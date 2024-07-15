@@ -43,7 +43,6 @@ import {
   catProduct18
 } from '@/shared/utils/images'
 
-
 const category = ref([
   {
     title: 'Tibbiy kiyim',
@@ -136,6 +135,7 @@ const category = ref([
     img: catProduct18
   }
 ])
+
 </script>
 
 <style scoped>
