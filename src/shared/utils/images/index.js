@@ -34,8 +34,10 @@ import catProduct18 from './category/travmotologiya.svg'
 import elipsHat from './adds/icon-hat.svg'
 import elipsPlus from './adds/icon-plus.svg'
 import elipsEngeener from './adds/icons-engineer.svg'
+import productItem from './products/product-item.svg'
 
 export {
+    productItem,
     uz,
     ru,
     eng,
