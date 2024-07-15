@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:w-[1440px] mx-auto px-3 py-3 2xl:px-12 mt-10">
+  <div class="2xl:w-[1440px] mx-auto  px-3 py-3 2xl:px-12 mt-10 relative">
     <div class="text-center font-medium text-3xl">
       Bo’limlar
     </div>
@@ -18,10 +18,14 @@
         </div>
       </div>
     </div>
+    <div class="w-full h-full top-0 left-0 bg-gradient-to-b from-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,1)] absolute  z-5 flex items-end justify-center">
+      <Button title="See all categories" color="white" bg-color="#1272CC"/>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { Button } from "@/shared/buttons";
 import {
   catProduct1,
   catProduct2,
@@ -42,6 +46,7 @@ import {
   catProduct17,
   catProduct18
 } from '@/shared/utils/images'
+import { onMounted } from "vue";
 
 const category = ref([
   {
@@ -135,6 +140,14 @@ const category = ref([
     img: catProduct18
   }
 ])
+
+let filter = () => {
+  category.value = category.value.slice(0, 9)
+}
+
+onMounted(() => {
+  filter()
+})
 
 </script>
 
