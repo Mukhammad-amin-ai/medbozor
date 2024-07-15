@@ -43,8 +43,10 @@ import mapLocation from './icons/map-location.svg'
 import massage from './icons/massage.svg'
 import telegram from './icons/telegram.svg'
 import tikTok from './icons/tik-tok.svg'
+import LogoFooter from './logo/LogoFooter.svg'
 
 export {
+    LogoFooter,
     tikTok,
     telegram,
     massage,
