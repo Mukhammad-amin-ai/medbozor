@@ -6,10 +6,10 @@
              :style="{backgroundColor:item.bgIcon}">
           <img :src=" item.img" alt="">
         </div>
-        <div>
+        <div class="mt-5 font-bold text-2xl text-[20px]">
           {{ item.title }}
         </div>
-        <div>
+        <div class="mt-5">
           {{ item.description }}
         </div>
       </div>

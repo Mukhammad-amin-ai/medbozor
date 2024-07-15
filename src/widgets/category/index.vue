@@ -10,8 +10,8 @@
            :key="index"
            :style="{ backgroundImage: `url('_nuxt/src/shared/utils/images/category/${item.bg}')`}">
         <div class="w-[50%]">
-          <div class="font-medium text-[24px]"> {{ item.title }}</div>
-          <button class="underline ">Shop now +</button>
+          <div class="font-semibold text-[24px]"> {{ item.title }}</div>
+          <button class="underline uppercase mt-5">Shop now +</button>
         </div>
         <div class="w-[50%] flex items-center justify-center">
           <img :src="item.img" alt="">
