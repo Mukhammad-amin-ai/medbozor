@@ -35,8 +35,24 @@ import elipsHat from './adds/icon-hat.svg'
 import elipsPlus from './adds/icon-plus.svg'
 import elipsEngeener from './adds/icons-engineer.svg'
 import productItem from './products/product-item.svg'
+import arrowTop from './icons/arrow-top.svg'
+import callFooter from './icons/call-footer.svg'
+import facebook from './icons/facebook.svg'
+import instagram from './icons/instagram.svg'
+import mapLocation from './icons/map-location.svg'
+import massage from './icons/massage.svg'
+import telegram from './icons/telegram.svg'
+import tikTok from './icons/tik-tok.svg'
 
 export {
+    tikTok,
+    telegram,
+    massage,
+    mapLocation,
+    instagram,
+    facebook,
+    callFooter,
+    arrowTop,
     productItem,
     uz,
     ru,

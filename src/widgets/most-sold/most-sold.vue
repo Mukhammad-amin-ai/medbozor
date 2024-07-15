@@ -14,13 +14,16 @@
                    :has-discount="item.hasDiscount"
       />
     </div>
+    <div class="flex items-center justify-center">
+      <Button class="px-6" title="All products" color="#fff" bg-color="#1272CC"/>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { Button } from "@/shared/buttons";
 import { ProductItem } from "@/shared/product";
 import { productItem } from '@/shared/utils/images'
-
 
 const products = ref([
   {
