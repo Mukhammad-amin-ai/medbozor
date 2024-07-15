@@ -19,7 +19,7 @@
       </div>
     </div>
     <div v-if="hide !== true"
-         class="w-full h-full top-0 left-0 bg-gradient-to-b from-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,1)] absolute  z-5 flex items-end justify-center">
+         class="w-full h-[30%] bottom-0 left-0 bg-gradient-to-b from-[rgba(255,255,255,0.2)] to-[rgba(255,255,255,2)] absolute  z-5 flex items-end justify-center">
       <Button title="See all categories" color="white" bg-color="#1272CC" @click="hideButton"/>
     </div>
   </div>
