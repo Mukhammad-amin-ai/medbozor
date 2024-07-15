@@ -6,7 +6,7 @@
     <div class="flex gap-8 mt-11 items-center flex-wrap">
       <!-- Item of Product Category -->
       <div class=" w-[425px] h-[240px] rounded-[20px] pt-10 px-5 pb-2 flex bg-no-repeat bg-contain"
-           v-for="(item,index) in category"
+           v-for="(item,index) in showedObj"
            :key="index"
            :style="{ backgroundImage: `url('_nuxt/src/shared/utils/images/category/${item.bg}')`}">
         <div class="w-[50%]">
@@ -18,13 +18,15 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-full top-0 left-0 bg-gradient-to-b from-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,1)] absolute  z-5 flex items-end justify-center">
-      <Button title="See all categories" color="white" bg-color="#1272CC"/>
+    <div v-if="hide !== true"
+         class="w-full h-full top-0 left-0 bg-gradient-to-b from-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,1)] absolute  z-5 flex items-end justify-center">
+      <Button title="See all categories" color="white" bg-color="#1272CC" @click="hideButton"/>
     </div>
   </div>
 </template>
 
 <script setup>
+import { onMounted } from "vue";
 import { Button } from "@/shared/buttons";
 import {
   catProduct1,
@@ -46,7 +48,15 @@ import {
   catProduct17,
   catProduct18
 } from '@/shared/utils/images'
-import { onMounted } from "vue";
+
+let hide = ref(false)
+
+let hideButton = () => {
+  hide.value = !hide.value
+  showedObj.value = category.value
+}
+
+let showedObj = ref([])
 
 const category = ref([
   {
@@ -142,7 +152,7 @@ const category = ref([
 ])
 
 let filter = () => {
-  category.value = category.value.slice(0, 9)
+  showedObj.value = category.value.slice(0, 9)
 }
 
 onMounted(() => {
