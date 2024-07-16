@@ -46,7 +46,9 @@
         </form>
       </div>
       <div class="flex items-center gap-5">
-        <ButtonWithIcon :icon="cart" text="My cart" color="#1272CC" textColor="#fff"/>
+        <NuxtLink to="/user-profile">
+          <ButtonWithIcon :icon="cart" text="My cart" color="#1272CC" textColor="#fff"/>
+        </NuxtLink>
         <NuxtLink to="/sign-in">
           <ButtonWithIcon :icon="user" text="Sign in" color="transparent" textColor="#9DADCB"/>
         </NuxtLink>
