@@ -1,13 +1,13 @@
 <template>
   <div>
     <HeaderComp/>
-    <AuthForm/>
+    <SignInForm/>
   </div>
 </template>
 
 <script setup>
 import { HeaderComp } from "@/widgets";
-import { AuthForm } from '@/entities/Auth'
+import { SignInForm } from '@/entities/Auth'
 
 </script>
 

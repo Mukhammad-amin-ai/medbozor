@@ -1,3 +1,5 @@
-import AuthForm from "./ui/auth-form.vue";
+import SignInForm from "./ui/sign-in-form.vue";
+import SignUpForm from "./ui/sign-up-form.vue";
 
-export { AuthForm };
+
+export { SignInForm,SignUpForm };
