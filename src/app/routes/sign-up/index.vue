@@ -1,13 +1,11 @@
 <template>
   <div>
-    <HeaderComp/>
+    <SingUp/>
   </div>
 </template>
 
 <script setup>
-
-import { HeaderComp } from "@/widgets";
-
+import { SingUp } from "@/pages/auth";
 </script>
 
 <style scoped>

@@ -1,3 +1,4 @@
-import Auth from './ui/auth-comp.vue';
+import SingIn from './ui/sign-in.vue';
+import SingUp from './ui/sign-up.vue';
 
-export default Auth;
+export { SingIn, SingUp };

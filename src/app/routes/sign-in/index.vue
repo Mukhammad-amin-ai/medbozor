@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Auth/>
+    <SingIn/>
   </div>
 </template>
 
 <script setup>
-import Auth from "@/pages/auth/index.js";
+import { SingIn } from "@/pages/auth";
 </script>
 
 <style scoped>

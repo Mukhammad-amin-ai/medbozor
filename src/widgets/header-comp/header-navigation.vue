@@ -1,7 +1,9 @@
 <template>
   <div class="2xl:w-[1440px] mx-auto px-3 py-3 2xl:px-24 flex items-center justify-between">
     <div>
-      <img :src="logo" alt="">
+      <NuxtLink to="/">
+        <img :src="logo" alt="">
+      </NuxtLink>
     </div>
     <div class="flex items-center gap-24">
       <div class="flex items-center gap-5">
@@ -45,7 +47,9 @@
       </div>
       <div class="flex items-center gap-5">
         <ButtonWithIcon :icon="cart" text="My cart" color="#1272CC" textColor="#fff"/>
-        <ButtonWithIcon :icon="user" text="Sign int" color="transparent" textColor="#9DADCB"/>
+        <NuxtLink to="/sign-in">
+          <ButtonWithIcon :icon="user" text="Sign in" color="transparent" textColor="#9DADCB"/>
+        </NuxtLink>
       </div>
     </div>
   </div>
