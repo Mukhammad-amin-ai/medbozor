@@ -45,8 +45,14 @@ import telegram from './icons/telegram.svg'
 import tikTok from './icons/tik-tok.svg'
 import LogoFooter from './logo/LogoFooter.svg'
 import LogOut from './icons/logout.svg'
+import ArrowBack from './icons/arrow-back.svg'
+import Basket from './img/basket.svg'
+import Box from './img/box.svg'
 
 export {
+    ArrowBack,
+    Box,
+    Basket,
     LogOut,
     LogoFooter,
     tikTok,
