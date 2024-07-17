@@ -120,7 +120,7 @@
 </template>
 
 <script setup>
-import { LogOut,Box,Basket,ArrowBack } from "@/shared/utils/images";
+import { LogOut, Box, Basket, ArrowBack } from "@/shared/utils/images";
 
 let ProfileActive = ref(false)
 let ShopActive = ref(false)
