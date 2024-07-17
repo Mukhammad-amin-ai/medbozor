@@ -1,6 +1,6 @@
 <template>
   <div class="border-b border-gray-200">
-    <div class="2xl:w-[1440px] mx-auto px-3 py-3 2xl:px-24 flex justify-between items-center ">
+    <BaseDiv class="flex justify-between items-center">
       <div class="flex items-center gap-2 text-[#9DADCB]">
         <img :src="call" alt="call-icon">
         +998901013636
@@ -42,13 +42,13 @@
           </ul>
         </div>
       </div>
-    </div>
+    </BaseDiv>
   </div>
 </template>
 
 <script setup>
-import { call, shipping, heart } from "@/shared/utils/images/index.js";
-import { uz, ru, eng } from '@/shared/utils/images/index.js'
+import { call, shipping, heart, uz, ru, eng } from "@/shared/utils/images";
+import BaseDiv from "@/shared/base-div/base-div.vue";
 import { onMounted } from "vue";
 
 let getterLang = ref({
@@ -101,7 +101,3 @@ onMounted(() => {
 })
 
 </script>
-
-<style scoped>
-
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:w-[1440px] mx-auto px-3 py-3 2xl:px-24 flex items-center justify-between">
+  <BaseDiv class="flex items-center justify-between">
     <div>
       <NuxtLink to="/">
         <img :src="logo" alt="">
@@ -40,7 +40,7 @@
               <img :src="search" alt="">
             </div>
             <input type="search" id="default-search"
-                   class=" w-[400px] h-[35px] p-4 ps-10 text-[#9DADCB] placeholder:text-[#9DADCB] border  rounded-md  "
+                   class=" w-[400px] h-[35px] p-4 ps-10 text-[#9DADCB] placeholder:text-[#9DADCB] border border-[#E4E9F1]  rounded-md  "
                    placeholder="Qidirish matni" required/>
           </div>
         </form>
@@ -54,16 +54,13 @@
         </NuxtLink>
       </div>
     </div>
-  </div>
+  </BaseDiv>
 </template>
 
 <script setup>
 import { logo } from '@/shared/utils/images/index.js'
 import { category, search, cart, user } from '@/shared/utils/images/index.js'
 import { ButtonWithIcon } from "@/shared/buttons/index.js";
+import BaseDiv from "@/shared/base-div/base-div.vue";
 
 </script>
-
-<style scoped>
-
-</style>
