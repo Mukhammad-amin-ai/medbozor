@@ -6,6 +6,7 @@
 
 <script setup>
 import { Profile } from '@/pages/profile'
+
 </script>
 
 <style scoped>
