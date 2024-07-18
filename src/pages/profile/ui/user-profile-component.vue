@@ -1,18 +1,19 @@
 <template>
-  <div class="bg-[#F6F9FE] h-[100vh]">
+  <div class="bg-[#F6F9FE] h-[100vh] relative">
     <HeaderComp/>
     <BaseDiv>
       <Breadcrumbs title="Med bozor" subtitle="Mening profilim"/>
       <ProfileComponent/>
     </BaseDiv>
   </div>
+    <ProfileModule/>
 </template>
 
 <script setup>
 import BaseDiv from "@/shared/base-div/base-div.vue";
 import { HeaderComp } from "@/widgets";
 import { Breadcrumbs } from '@/shared/breadcrumbs'
-import { ProfileComponent } from "@/entities/Profile/index.js";
+import { ProfileComponent,ProfileModule } from "@/entities/Profile/index.js";
 
 </script>
 

@@ -7,7 +7,8 @@
       <div>
         Bu yerda siz shaxsiy ma'lumotlaringizni o'zgartirishingiz yoki qo'shishingiz mumkin.
       </div>
-      <button class="px-2 py-3 flex rounded-lg gap-2 items-center border-[#1272CC] border text-[#1272CC]">
+      <button class="px-2 py-3 flex rounded-lg gap-2 items-center border-[#1272CC] border text-[#1272CC]"
+              data-modal-target="logout-modal" data-modal-toggle="logout-modal" >
         <img :src="LogOut" alt="">
         Tizimdan chiqish
       </button>
@@ -20,7 +21,7 @@
             <button :class="ActiveClassP" @click="profile"
                     class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
                     data-tabs-target="#profile"
-                    type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    type="button" role="tab" aria-controls="profile" aria-selected="true">
               Profil
             </button>
           </li>
@@ -52,7 +53,9 @@
                 <div class="font-semibold">Alison Parker</div>
                 <div>+998 66 230 00 15</div>
               </div>
-              <div class="mt-8 font-medium text-[14px] text-[#1272CC] ">
+              <div class="mt-8 font-medium text-[14px] text-[#1272CC] cursor-pointer"
+                   data-modal-target="Profile-modal" data-modal-toggle="Profile-modal"
+              >
                 Tahrirlash
               </div>
             </div>
@@ -63,7 +66,8 @@
               <div class="mt-[69px]">
                 <div class="font-semibold">************</div>
               </div>
-              <div class="mt-8 font-medium text-[14px] text-[#1272CC] ">
+              <div class="mt-8 font-medium text-[14px] text-[#1272CC] cursor-pointer"
+                   data-modal-target="Password-modal" data-modal-toggle="Password-modal">
                 Parolni o’zgartirish
               </div>
             </div>
@@ -74,7 +78,8 @@
               <div class="mt-11">
                 <div class="w-[90%]">Kelgusi buyurtmalar uchun manzilingizni kiriting</div>
               </div>
-              <div class="mt-8 font-medium text-[14px] text-[#1272CC] ">
+              <div class="mt-8 font-medium text-[14px] text-[#1272CC] cursor-pointer"
+                   data-modal-target="Address-modal" data-modal-toggle="Address-modal">
                 Manzilni kiritish
               </div>
             </div>
@@ -115,11 +120,14 @@
           </div>
         </div>
       </div>
+      <ProfileModel/>
     </div>
   </div>
 </template>
 
 <script setup>
+import ProfileModel from "./profile-model.vue";
+
 import { LogOut, Box, Basket, ArrowBack } from "@/shared/utils/images";
 
 let ProfileActive = ref(false)
