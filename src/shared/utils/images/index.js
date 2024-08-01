@@ -48,8 +48,12 @@ import LogOut from './icons/logout.svg'
 import ArrowBack from './icons/arrow-back.svg'
 import Basket from './img/basket.svg'
 import Box from './img/box.svg'
+import EyeFill from './icons/eye-fill.svg'
+import HeartHollow from './icons/heart-hollow.svg'
 
 export {
+    EyeFill,
+    HeartHollow,
     ArrowBack,
     Box,
     Basket,
@@ -64,11 +68,11 @@ export {
     callFooter,
     arrowTop,
     productItem,
+    productMask,
     uz,
     ru,
     eng,
     logo,
-    productMask,
     call,
     heart,
     shipping,
