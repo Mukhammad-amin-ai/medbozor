@@ -12,6 +12,7 @@
   "dependencies": {
     "flowbite": "^2.4.1",
     "nuxt": "^3.12.3",
+    "nuxt-easy-lightbox": "^1.0.2",
     "nuxt-swiper": "^1.2.2",
     "vue": "latest"
   },
