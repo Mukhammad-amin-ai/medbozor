@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 flex  gap-[60px]">
+  <div class="mt-6 flex gap-[60px]">
     <div class="flex gap-[20px]">
       <div class="flex flex-col items-center gap-3">
         <div class="w-[100px] h-[100px] flex items-center justify-center bg-[#F5F5F5]"
@@ -54,7 +54,47 @@
           1
           <button class="w-[20px] flex items-center justify-center h-[20px]">+</button>
         </div>
-        <ButtonWithIcon class="w-[351px] h-[52px] flex items-center justify-center" :icon="cart" text="Savatchaga qo’shish" text-color="#fff" color="#1272CC"/>
+        <ButtonWithIcon class="w-[351px] h-[52px] flex items-center justify-center" :icon="cart"
+                        text="Savatchaga qo’shish" text-color="#fff" color="#1272CC"/>
+      </div>
+    </div>
+  </div>
+  <div class="mt-6">
+    <ul class="flex p-2 flex-wrap text-sm font-medium text-center text-gray-500 border-b border-[#E4E9F1] dark:border-gray-700 dark:text-gray-400"
+        id="default-tab"
+        data-tabs-toggle="#default-tab-content" role="tablist">
+      <li class="me-2">
+        <div data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true"
+             class="inline-block p-4 cursor-pointer active-tab-bar hover:bg-[#F6F9FE]">
+          Ma’lumot
+        </div>
+      </li>
+      <li class="me-2">
+        <div id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+             aria-selected="false"
+             class="inline-block p-4 cursor-pointer  hover:bg-[#F6F9FE]">
+          Xususiyati
+        </div>
+      </li>
+      <li class="me-2">
+        <div id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
+             aria-selected="false"
+             class="inline-block p-4 cursor-pointer  hover:bg-[#F6F9FE]">
+          Izoh
+        </div>
+      </li>
+    </ul>
+    <div id="default-tab-content">
+      <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="mt-2 flex items-center gap-4">
+          1
+        </div>
+      </div>
+      <div class="hidden p-4 rounded-lg " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+        2
+      </div>
+      <div class="hidden p-4 rounded-lg " id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        3
       </div>
     </div>
   </div>
@@ -69,7 +109,7 @@
 </template>
 
 <script setup>
-import { productMask, HeartHollow, EyeFill,cart } from '@/shared/utils/images'
+import { productMask, HeartHollow, EyeFill, cart, Basket, ArrowBack, Box } from '@/shared/utils/images'
 import { ButtonWithIcon } from '@/shared/buttons'
 import Color from '@/shared/color/index.vue'
 import Size from '@/shared/size/index.vue'
@@ -96,5 +136,12 @@ const onHide = () => (visibleRef.value = false);
 .vel-toolbar {
   display: none;
 }
+
+.active-tab-bar{
+  background-color: #F6F9FE;
+  color: #1272CC;
+}
+
+
 
 </style>
