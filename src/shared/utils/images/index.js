@@ -51,8 +51,12 @@ import Box from './img/box.svg'
 import EyeFill from './icons/eye-fill.svg'
 import HeartHollow from './icons/heart-hollow.svg'
 import Thermometr from './products/termometr.svg'
+import stars from './icons/stars.svg'
+import TermMini from './products/term-mini.svg'
 
 export {
+    stars,
+    TermMini,
     EyeFill,
     Thermometr,
     HeartHollow,
