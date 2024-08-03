@@ -53,8 +53,10 @@ import HeartHollow from './icons/heart-hollow.svg'
 import Thermometr from './products/termometr.svg'
 import stars from './icons/stars.svg'
 import TermMini from './products/term-mini.svg'
+import SearchImg from './img/search.svg'
 
 export {
+    SearchImg,
     stars,
     TermMini,
     EyeFill,
