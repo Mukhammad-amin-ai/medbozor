@@ -49,7 +49,7 @@ import InformationDisplay from './components/infomation-display.vue'
 import Information from './components/tabbar/information.vue'
 import Characteristics from './components/tabbar/charackteristics.vue'
 import Comment from './components/tabbar/comment.vue'
-import Trends from './components/trends.vue'
+import Trends from "@/widgets/product-description/components/trends.vue";
 </script>
 
 <style scoped>
