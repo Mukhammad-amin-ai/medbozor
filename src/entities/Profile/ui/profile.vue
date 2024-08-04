@@ -8,7 +8,7 @@
         Bu yerda siz shaxsiy ma'lumotlaringizni o'zgartirishingiz yoki qo'shishingiz mumkin.
       </div>
       <button class="px-2 py-3 flex rounded-lg gap-2 items-center border-[#1272CC] border text-[#1272CC]"
-              data-modal-target="logout-modal" data-modal-toggle="logout-modal" >
+              data-modal-target="logout-modal" data-modal-toggle="logout-modal">
         <img :src="LogOut" alt="">
         Tizimdan chiqish
       </button>
@@ -44,80 +44,13 @@
       </div>
       <div id="default-tab-content">
         <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="mt-2 flex items-center gap-4 ">
-            <div class="bg-[#fff] p-[24px] rounded-lg w-[387px] h-[216px] ">
-              <div class="font-medium text-[20px]">
-                Shaxsiy ma’lumotlarim
-              </div>
-              <div class="mt-11">
-                <div class="font-semibold">Alison Parker</div>
-                <div>+998 66 230 00 15</div>
-              </div>
-              <div class="mt-8 font-medium text-[14px] text-[#1272CC] cursor-pointer"
-                   data-modal-target="Profile-modal" data-modal-toggle="Profile-modal"
-              >
-                Tahrirlash
-              </div>
-            </div>
-            <div class="bg-[#fff] p-[24px] rounded-lg w-[387px] h-[216px] ">
-              <div class="font-medium text-[20px]">
-                Parol
-              </div>
-              <div class="mt-[69px]">
-                <div class="font-semibold">************</div>
-              </div>
-              <div class="mt-8 font-medium text-[14px] text-[#1272CC] cursor-pointer"
-                   data-modal-target="Password-modal" data-modal-toggle="Password-modal">
-                Parolni o’zgartirish
-              </div>
-            </div>
-            <div class="bg-[#fff] p-[24px] rounded-lg w-[387px] h-[216px] ">
-              <div class="font-medium text-[20px]">
-                Manzil
-              </div>
-              <div class="mt-11">
-                <div class="w-[90%]">Kelgusi buyurtmalar uchun manzilingizni kiriting</div>
-              </div>
-              <div class="mt-8 font-medium text-[14px] text-[#1272CC] cursor-pointer"
-                   data-modal-target="Address-modal" data-modal-toggle="Address-modal">
-                Manzilni kiritish
-              </div>
-            </div>
-          </div>
+          <ProfileSettings/>
         </div>
-        <div class="hidden p-4 rounded-lg " id="dashboard" role="tabpanel"
-             aria-labelledby="dashboard-tab">
-          <div class="mt-10 flex items-center justify-center">
-            <div class="flex flex-col items-center gap-4 ">
-              <img :src="Basket" alt="basket">
-              <div>
-                Sizning xarid savatingiz hali bo’sh
-              </div>
-              <div>
-                <button class="border border-[#1272CC] text-[#1272CC] rounded-lg flex items-center p-2">
-                  <img :src="ArrowBack" alt="">
-                  Xaridga qaytish
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="hidden p-4 rounded-lg " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+          <CartHistory/>
         </div>
-        <div class="hidden p-4 rounded-lg " id="settings" role="tabpanel"
-             aria-labelledby="settings-tab">
-          <div class="mt-10 flex items-center justify-center">
-            <div class="flex flex-col items-center gap-4 ">
-              <img :src="Box" alt="basket">
-              <div>
-                Sevimli mahsulotlar yo’q
-              </div>
-              <div>
-                <button class="border border-[#1272CC] text-[#1272CC] rounded-lg flex items-center p-2">
-                  <img :src="ArrowBack" alt="">
-                  Xaridga qaytish
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="hidden p-4 rounded-lg " id="settings" role="tabpanel" aria-labelledby="settings-tab">
+          <Favorite/>
         </div>
       </div>
       <ProfileModel/>
@@ -127,17 +60,18 @@
 
 <script setup>
 import ProfileModel from "./profile-model.vue";
+import ProfileSettings from './settings.vue'
+import CartHistory from "./cart-history.vue";
+import Favorite from "./favorite.vue"
+import { LogOut } from "@/shared/utils/images";
 
-import { LogOut, Box, Basket, ArrowBack } from "@/shared/utils/images";
+let ProfileActive = ref( false )
+let ShopActive = ref( false )
+let FavoriteActive = ref( false )
 
-let ProfileActive = ref(false)
-let ShopActive = ref(false)
-let FavoriteActive = ref(false)
-
-let ActiveClassP = ref("border-b-[#1272CC] text-[#1272CC]")
-let ActiveClassSh = ref("")
-let ActiveClassF = ref("")
-
+let ActiveClassP = ref( "border-b-[#1272CC] text-[#1272CC]" )
+let ActiveClassSh = ref( "" )
+let ActiveClassF = ref( "" )
 
 let profile = () => {
   ActiveClassP.value = "border-b-[#1272CC] text-[#1272CC]"
@@ -147,6 +81,7 @@ let profile = () => {
   ShopActive.value = true
   FavoriteActive.value = false
 }
+
 let shop = () => {
   ActiveClassP.value = ""
   ActiveClassSh.value = "border-b-[#1272CC] text-[#1272CC]"
@@ -155,6 +90,7 @@ let shop = () => {
   ShopActive.value = true
   FavoriteActive.value = false
 }
+
 let favorite = () => {
   ActiveClassP.value = ""
   ActiveClassSh.value = ""
@@ -163,8 +99,6 @@ let favorite = () => {
   ShopActive.value = false
   FavoriteActive.value = true
 }
-
-
 </script>
 
 <style scoped>
