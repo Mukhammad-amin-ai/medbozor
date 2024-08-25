@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-import { productMask, HeartHollow, EyeFill, cart, Basket, ArrowBack, Box } from '@/shared/utils/images'
+import { productMask, HeartHollow, EyeFill, cart } from '@/shared/utils/images'
 import { ButtonWithIcon } from '@/shared/buttons'
 import Color from '@/shared/color/index.vue'
 import Size from '@/shared/size/index.vue'
@@ -101,7 +101,5 @@ const onHide = () => (visibleRef.value = false);
   background-color: #F6F9FE;
   color: #1272CC;
 }
-
-
 
 </style>

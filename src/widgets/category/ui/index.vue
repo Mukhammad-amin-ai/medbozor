@@ -27,7 +27,7 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { Button } from "@/shared/buttons";
+import { Button } from "@/shared/buttons/index.js";
 import {
   catProduct1,
   catProduct2,
@@ -47,7 +47,7 @@ import {
   catProduct16,
   catProduct17,
   catProduct18
-} from '@/shared/utils/images'
+} from '@/shared/utils/images/index.js'
 
 let hide = ref(false)
 

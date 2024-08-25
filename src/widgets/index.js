@@ -1,17 +1,17 @@
-import HeaderComp from "./header-comp/index.vue";
-import SwiperComp from "./swiper/swiper-hero.vue";
-import CategoryComp from "./category/index.vue";
-import MostSold from "./most-sold/most-sold.vue";
-import FooterComp from "./footer-comp/index.vue";
-import CategoryPage from './category-page/index.vue'
-import ProductDescription from "./product-description/index.vue";
+import { Header } from "./header-comp";
+import { Swiper } from "./swiper";
+import { Category } from "./category";
+import { MostSold } from "./most-sold";
+import { Footer } from "./footer-comp";
+import { CategoryPage } from './category-page'
+import { ProductDescription } from "./product-description";
 
 export {
-    SwiperComp,
-    HeaderComp,
-    CategoryComp,
+    Swiper,
+    Header,
+    Category,
     MostSold,
-    FooterComp,
+    Footer,
     CategoryPage,
     ProductDescription
 };

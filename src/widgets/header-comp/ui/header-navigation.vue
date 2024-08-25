@@ -7,7 +7,6 @@
     </div>
     <div class="flex items-center gap-24">
       <div class="flex items-center gap-5">
-        <!-- Category Dropdown -->
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown-category"
                 class="text-[#023E7D] flex items-center gap-1" type="button">
           <img :src="category" alt="">
@@ -62,5 +61,4 @@ import { logo } from '@/shared/utils/images/index.js'
 import { category, search, cart, user } from '@/shared/utils/images/index.js'
 import { ButtonWithIcon } from "@/shared/buttons/index.js";
 import BaseDiv from "@/shared/base-div/base-div.vue";
-
 </script>

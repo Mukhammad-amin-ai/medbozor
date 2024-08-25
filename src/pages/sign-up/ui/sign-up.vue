@@ -1,12 +1,12 @@
 <template>
   <div>
-    <HeaderComp/>
+    <Header/>
     <SignUpForm/>
   </div>
 </template>
 
 <script setup>
-import { HeaderComp } from "@/widgets/index.js";
+import { Header } from "@/widgets/index.js";
 import { SignUpForm } from "@/entities/Sign-Up";
 </script>
 

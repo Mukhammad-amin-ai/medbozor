@@ -45,13 +45,9 @@
 </template>
 
 <script setup>
-import InformationDisplay from './components/infomation-display.vue'
-import Information from './components/tabbar/information.vue'
-import Characteristics from './components/tabbar/charackteristics.vue'
-import Comment from './components/tabbar/comment.vue'
-import Trends from "@/widgets/product-description/components/trends.vue";
+import InformationDisplay from './infomation-display.vue'
+import Information from './tabbar/information.vue'
+import Characteristics from './tabbar/charackteristics.vue'
+import Comment from './tabbar/comment.vue'
+import Trends from "./trends.vue";
 </script>
-
-<style scoped>
-
-</style>

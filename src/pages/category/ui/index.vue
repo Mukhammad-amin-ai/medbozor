@@ -1,16 +1,16 @@
 <template>
   <div>
-    <HeaderComp/>
+    <Header/>
     <BaseDiv>
       <CategoryPage/>
     </BaseDiv>
-    <FooterComp/>
+    <Footer/>
   </div>
 </template>
 
 <script setup>
-import { HeaderComp } from "@/widgets";
-import { FooterComp } from '@/widgets'
+import { Header } from "@/widgets";
+import { Footer } from '@/widgets'
 import { CategoryPage } from '@/widgets'
 import BaseDiv from "@/shared/base-div/base-div.vue";
 </script>

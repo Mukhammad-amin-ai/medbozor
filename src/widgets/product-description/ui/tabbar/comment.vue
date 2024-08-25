@@ -60,10 +60,6 @@
 </template>
 
 <script setup>
-import { cart, productMask, stars, TermMini } from "@/shared/utils/images/index.js";
-import { ButtonWithIcon } from "@/shared/buttons/index.js";
+import { cart, productMask, stars, TermMini } from "@/shared/utils/images";
+import { ButtonWithIcon } from "@/shared/buttons";
 </script>
-
-<style scoped>
-
-</style>

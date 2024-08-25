@@ -50,8 +50,8 @@
 </template>
 
 <script setup>
-import { productMask, cart, Thermometr } from '@/shared/utils/images'
-import { ButtonWithIcon } from "@/shared/buttons";
+import { productMask, cart, Thermometr } from '@/shared/utils/images/index.js'
+import { ButtonWithIcon } from "@/shared/buttons/index.js";
 
 </script>
 

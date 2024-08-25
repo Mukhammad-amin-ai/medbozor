@@ -14,7 +14,6 @@
           <img :src="heart" alt="heart">
           Wishlist
         </button>
-        <!-- Language Drop-Down -->
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="text-[#023E7D] gap-2 font-mediumtext-sm  text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
@@ -47,7 +46,7 @@
 </template>
 
 <script setup>
-import { call, shipping, heart, uz, ru, eng } from "@/shared/utils/images";
+import { call, shipping, heart, uz, ru, eng } from "@/shared/utils/images/index.js";
 import BaseDiv from "@/shared/base-div/base-div.vue";
 import { onMounted } from "vue";
 

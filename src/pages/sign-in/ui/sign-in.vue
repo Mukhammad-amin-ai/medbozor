@@ -1,11 +1,11 @@
 <template>
   <div>
-    <HeaderComp/>
+    <Header/>
     <SignInForm/>
   </div>
 </template>
 
 <script setup>
-import { HeaderComp } from "@/widgets";
+import { Header } from "@/widgets";
 import { SignInForm } from '@/entities/Sign-In'
 </script>

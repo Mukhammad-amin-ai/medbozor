@@ -112,12 +112,5 @@
 
 <script setup>
 import { LogoFooter } from '@/shared/utils/images'
-import {
-  tikTok, telegram, instagram, facebook, massage, mapLocation, callFooter
-} from '@/shared/utils/images'
-
+import { tikTok, telegram, instagram, facebook, massage, mapLocation, callFooter} from '@/shared/utils/images'
 </script>
-
-<style scoped>
-
-</style>

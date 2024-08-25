@@ -9,7 +9,3 @@
 import Header from "./header-comp.vue";
 import HeaderNavigation from "./header-navigation.vue";
 </script>
-
-<style scoped>
-
-</style>

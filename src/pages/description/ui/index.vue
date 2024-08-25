@@ -1,16 +1,16 @@
 <template>
   <div>
-    <HeaderComp/>
+    <Header/>
     <BaseDiv>
       <Breadcrumbs title="Med bozor" subtitle="Kategoriya nomi"/>
       <ProductDescription/>
     </BaseDiv>
-    <FooterComp/>
+    <Footer/>
   </div>
 </template>
 
 <script setup>
-import { HeaderComp, FooterComp, ProductDescription } from "@/widgets/index.js";
+import { Header, Footer, ProductDescription } from "@/widgets/index.js";
 import { Breadcrumbs } from "@/shared/breadcrumbs/index.js";
 import BaseDiv from "@/shared/base-div/base-div.vue";
 </script>

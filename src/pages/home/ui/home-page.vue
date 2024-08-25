@@ -1,18 +1,18 @@
 <template>
   <div class="relative">
-    <HeaderComp/>
-    <SwiperComp/>
+    <Header/>
+    <Swiper/>
     <Adds/>
-    <CategoryComp/>
+    <Category/>
     <AddsSecond/>
     <MostSold/>
-    <FooterComp/>
+    <Footer/>
     <ButtonToTop/>
   </div>
 </template>
 
 <script setup>
-import { HeaderComp, SwiperComp, CategoryComp, MostSold, FooterComp } from "@/widgets";
+import { Header, Swiper, Category, MostSold, Footer } from "@/widgets";
 import { Adds, AddsSecond } from '@/shared/adds'
 import { ButtonToTop } from '@/shared/buttons'
 

@@ -55,13 +55,12 @@
 </template>
 
 <script setup>
-import { productMask } from "@/shared/utils/images/index.js";
-import { Button } from "@/shared/buttons/index.js";
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { productMask } from "@/shared/utils/images/index.js";
+import { Button } from "@/shared/buttons/index.js";
 
 let modules = ref([ Navigation, Pagination, Mousewheel, Keyboard ])
-
 </script>
 
 <style>
