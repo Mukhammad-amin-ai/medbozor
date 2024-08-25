@@ -1,6 +1,6 @@
 <template>
   <LayoutProfile>
-    <NuxtPage/>
+
   </LayoutProfile>
 </template>
 

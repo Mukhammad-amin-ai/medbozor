@@ -4,6 +4,7 @@
     <BaseDiv>
       <Breadcrumbs title="Med bozor" subtitle="Mening profilim"/>
       <ProfileComponent/>
+      <slot/>
     </BaseDiv>
   </div>
   <ProfileModule/>
@@ -13,10 +14,5 @@
 import BaseDiv from "@/shared/base-div/base-div.vue";
 import { Header } from "@/widgets";
 import { Breadcrumbs } from '@/shared/breadcrumbs'
-import { ProfileComponent, ProfileModule } from "@/entities/Profile/index.js";
-
+import { ProfileComponent, ProfileModule } from "@/entities/Profile";
 </script>
-
-<style scoped>
-
-</style>

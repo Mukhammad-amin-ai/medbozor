@@ -28,25 +28,29 @@
             </nuxt-link>
           </li>
           <li class="me-2" role="presentation">
-            <button :class="ActiveClassSh" @click="shop"
-                    class="inline-block p-4 border-b-2 rounded-t-lg "
-                    id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
-                    aria-selected="false">Xaridlar tarixi
-            </button>
+            <nuxt-link to="/profile/history">
+              <button :class="ActiveClassSh" @click="shop"
+                      class="inline-block p-4 border-b-2 rounded-t-lg "
+                      id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                      aria-controls="dashboard"
+                      aria-selected="false">Xaridlar tarixi
+              </button>
+            </nuxt-link>
           </li>
           <li class="me-2" role="presentation">
-            <button :class="ActiveClassF" @click="favorite"
-                    class="inline-block p-4 border-b-2 rounded-t-lg"
-                    id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
-                    aria-selected="false">
-              Sevimli mahsulotlar
-            </button>
+            <nuxt-link to="/profile/favorite">
+              <button :class="ActiveClassF" @click="favorite"
+                      class="inline-block p-4 border-b-2 rounded-t-lg"
+                      id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
+                      aria-selected="false">
+                Sevimli mahsulotlar
+              </button>
+            </nuxt-link>
           </li>
         </ul>
       </div>
       <div>
       </div>
-      <ProfileModel/>
     </div>
   </div>
 </template>

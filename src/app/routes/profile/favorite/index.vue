@@ -1,13 +1,9 @@
 <template>
-  <div>
-
-  </div>
+  <LayoutProfile>
+    Favorite
+  </LayoutProfile>
 </template>
 
 <script setup>
-
+import LayoutProfile from "@/app/layouts/profile.vue";
 </script>
-
-<style scoped>
-
-</style>
