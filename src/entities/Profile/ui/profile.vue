@@ -18,12 +18,14 @@
         <ul class="flex flex-wrap -mb-px text-sm font-medium text-center bg-white rounded-lg" id="default-tab"
             data-tabs-toggle="#default-tab-content" role="tablist">
           <li class="me-2" role="presentation">
-            <button :class="ActiveClassP" @click="profile"
-                    class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
-                    data-tabs-target="#profile"
-                    type="button" role="tab" aria-controls="profile" aria-selected="true">
-              Profil
-            </button>
+            <nuxt-link to="/profile/settings">
+              <button :class="ActiveClassP" @click="profile"
+                      class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
+                      data-tabs-target="#profile"
+                      type="button" role="tab" aria-controls="profile" aria-selected="true">
+                Profil
+              </button>
+            </nuxt-link>
           </li>
           <li class="me-2" role="presentation">
             <button :class="ActiveClassSh" @click="shop"
@@ -42,16 +44,7 @@
           </li>
         </ul>
       </div>
-      <div id="default-tab-content">
-        <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <ProfileSettings/>
-        </div>
-        <div class="hidden p-4 rounded-lg " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-          <CartHistory/>
-        </div>
-        <div class="hidden p-4 rounded-lg " id="settings" role="tabpanel" aria-labelledby="settings-tab">
-          <Favorite/>
-        </div>
+      <div>
       </div>
       <ProfileModel/>
     </div>
