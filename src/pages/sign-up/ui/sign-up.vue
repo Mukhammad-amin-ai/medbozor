@@ -6,8 +6,8 @@
 </template>
 
 <script setup>
-import { HeaderComp } from "@/widgets";
-import { SignUpForm } from "@/entities/Auth";
+import { HeaderComp } from "@/widgets/index.js";
+import { SignUpForm } from "@/entities/Sign-Up";
 </script>
 
 <style scoped>

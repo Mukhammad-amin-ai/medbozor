@@ -5,11 +5,5 @@
 </template>
 
 <script setup>
-import { Category } from '@/pages/category'
-
-
+import { Category } from '@/pages'
 </script>
-
-<style scoped>
-
-</style>

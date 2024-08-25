@@ -1,13 +1,9 @@
 <template>
   <div>
-    <ProductDescription/>
+    <Description/>
   </div>
 </template>
 
 <script setup>
-import ProductDescription from "@/pages/description/index.vue";
+import { Description } from "@/pages";
 </script>
-
-<style scoped>
-
-</style>

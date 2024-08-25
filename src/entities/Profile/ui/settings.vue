@@ -1,5 +1,4 @@
 <template>
-<!--  <div class="hidden p-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">-->
     <div class="mt-2 flex items-center gap-4 ">
       <div class="bg-[#fff] p-[24px] rounded-lg w-[387px] h-[216px] ">
         <div class="font-medium text-[20px]">
@@ -40,7 +39,6 @@
         </div>
       </div>
     </div>
-<!--  </div>-->
 </template>
 
 <script setup>
@@ -49,7 +47,3 @@ definePageMeta({
 })
 
 </script>
-
-<style scoped>
-
-</style>

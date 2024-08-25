@@ -1,13 +1,9 @@
 <template>
   <div>
-    <HomePage/>
+    <Home/>
   </div>
 </template>
 
 <script setup>
-import HomePage from "@/pages/home/index.js";
+import { Home } from "@/pages";
 </script>
-
-<style scoped>
-
-</style>

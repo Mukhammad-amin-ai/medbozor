@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import { HeaderComp, FooterComp, ProductDescription } from "@/widgets";
-import { Breadcrumbs } from "@/shared/breadcrumbs";
+import { HeaderComp, FooterComp, ProductDescription } from "@/widgets/index.js";
+import { Breadcrumbs } from "@/shared/breadcrumbs/index.js";
 import BaseDiv from "@/shared/base-div/base-div.vue";
 </script>
 

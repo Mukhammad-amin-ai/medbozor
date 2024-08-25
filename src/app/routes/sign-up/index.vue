@@ -1,13 +1,9 @@
 <template>
   <div>
-    <SingUp/>
+    <SignUp/>
   </div>
 </template>
 
 <script setup>
-import { SingUp } from "@/pages/auth";
+import { SignUp } from "@/pages";
 </script>
-
-<style scoped>
-
-</style>

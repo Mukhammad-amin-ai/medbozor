@@ -60,10 +60,5 @@
 </template>
 
 <script setup>
-import { Button } from "@/shared/buttons/index.js";
-
+import { Button } from "@/shared/buttons";
 </script>
-
-<style scoped>
-
-</style>

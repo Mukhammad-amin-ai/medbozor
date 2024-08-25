@@ -18,10 +18,5 @@
 </template>
 
 <script setup>
-
-import { ArrowBack, Basket } from "@/shared/utils/images/index.js";
+import { ArrowBack, Basket } from "@/shared/utils/images";
 </script>
-
-<style scoped>
-
-</style>

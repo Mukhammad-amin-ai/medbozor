@@ -20,7 +20,3 @@
 <script setup>
 import { ArrowBack, Box } from "@/shared/utils/images";
 </script>
-
-<style scoped>
-
-</style>

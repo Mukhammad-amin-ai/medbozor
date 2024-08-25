@@ -1,13 +1,9 @@
 <template>
   <div>
-    <SingIn/>
+    <SignIn/>
   </div>
 </template>
 
 <script setup>
-import { SingIn } from "@/pages/auth";
+import { SignIn } from "@/pages";
 </script>
-
-<style scoped>
-
-</style>

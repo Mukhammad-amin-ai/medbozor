@@ -37,10 +37,4 @@
 
 <script setup>
 import { Button } from "@/shared/buttons";
-
-
 </script>
-
-<style scoped>
-
-</style>

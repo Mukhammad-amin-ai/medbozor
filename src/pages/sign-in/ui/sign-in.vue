@@ -7,10 +7,5 @@
 
 <script setup>
 import { HeaderComp } from "@/widgets";
-import { SignInForm } from '@/entities/Auth'
-
+import { SignInForm } from '@/entities/Sign-In'
 </script>
-
-<style scoped>
-
-</style>

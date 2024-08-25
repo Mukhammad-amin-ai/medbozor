@@ -53,9 +53,6 @@
 
 <script setup>
 import ProfileModel from "./profile-model.vue";
-import ProfileSettings from './settings.vue'
-import CartHistory from "./cart-history.vue";
-import Favorite from "./favorite.vue"
 import { LogOut } from "@/shared/utils/images";
 
 let ProfileActive = ref( false )
