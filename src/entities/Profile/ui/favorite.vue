@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden p-4 " id="settings" role="tabpanel" aria-labelledby="settings-tab">
+  <div class="p-4">
     <div class="mt-10 flex items-center justify-center">
       <div class="flex flex-col items-center gap-4 ">
         <img :src="Box" alt="basket">

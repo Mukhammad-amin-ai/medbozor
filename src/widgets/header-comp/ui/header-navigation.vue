@@ -45,7 +45,7 @@
         </form>
       </div>
       <div class="flex items-center gap-5">
-        <NuxtLink href="/profile">
+        <NuxtLink href="/profile/settings">
           <ButtonWithIcon :icon="cart" text="My cart" color="#1272CC" textColor="#fff"/>
         </NuxtLink>
         <NuxtLink to="/sign-in">
@@ -57,8 +57,7 @@
 </template>
 
 <script setup>
-import { logo } from '@/shared/utils/images/index.js'
-import { category, search, cart, user } from '@/shared/utils/images/index.js'
-import { ButtonWithIcon } from "@/shared/buttons/index.js";
+import { category, search, cart, user,logo } from '@/shared/utils/images'
+import { ButtonWithIcon } from "@/shared/buttons";
 import BaseDiv from "@/shared/base-div/base-div.vue";
 </script>

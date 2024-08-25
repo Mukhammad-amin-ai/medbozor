@@ -15,8 +15,7 @@
     </div>
     <div class="mt-8">
       <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center bg-white rounded-lg" id="default-tab"
-            data-tabs-toggle="#default-tab-content" role="tablist">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center bg-white rounded-lg" >
           <li class="me-2" role="presentation">
             <nuxt-link to="/profile/settings">
               <button :class="ActiveClassP" @click="profile"
@@ -56,7 +55,6 @@
 </template>
 
 <script setup>
-import ProfileModel from "./profile-model.vue";
 import { LogOut } from "@/shared/utils/images";
 
 let ProfileActive = ref( false )

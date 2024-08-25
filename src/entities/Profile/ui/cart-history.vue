@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden p-4 " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+  <div class="p-4 ">
     <div class="mt-10 flex items-center justify-center">
       <div class="flex flex-col items-center gap-4 ">
         <img :src="Basket" alt="basket">
@@ -16,7 +16,6 @@
     </div>
   </div>
 </template>
-
 <script setup>
 import { ArrowBack, Basket } from "@/shared/utils/images";
 </script>
