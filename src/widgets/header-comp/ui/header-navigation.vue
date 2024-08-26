@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { category, search, cart, user,logo } from '@/shared/utils/images'
+import { category, search, cart, user, logo } from '@/shared/utils/images'
 import { ButtonWithIcon } from "@/shared/buttons";
 import BaseDiv from "@/shared/base-div/base-div.vue";
 </script>

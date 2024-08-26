@@ -1,7 +1,9 @@
 <template>
   <div class="bg-white">
-      <Header/>
+    <Header/>
+    <div class="xl:block hidden">
       <HeaderNavigation/>
+    </div>
   </div>
 </template>
 

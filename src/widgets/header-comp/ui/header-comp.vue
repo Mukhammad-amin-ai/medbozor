@@ -25,8 +25,7 @@
                   d="m1 1 4 4 4-4"/>
           </svg>
         </button>
-        <div id="dropdown"
-             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
             <li v-for="(lang,index) in language" :key="index" @click="langChange(index)">
               <button class="flex items-center p-3 gap-3">
@@ -46,57 +45,56 @@
 </template>
 
 <script setup>
-import { call, shipping, heart, uz, ru, eng } from "@/shared/utils/images/index.js";
+import { call, shipping, heart, uz, ru, eng } from "@/shared/utils/images";
 import BaseDiv from "@/shared/base-div/base-div.vue";
 import { onMounted } from "vue";
 
-let getterLang = ref({
+let getterLang = ref( {
   title: "O’zbek",
   lang: uz,
   checked: true,
   route: '/'
-})
+} )
 
-let language = ref([
-      {
-        title: "O’zbek",
-        lang: uz,
-        checked: false,
-        route: '/'
-      },
-      {
-        title: "Русский",
-        lang: ru,
-        checked: false,
-        route: '/'
-      },
-      {
-        title: "English",
-        lang: eng,
-        checked: false,
-        route: '/'
-      }
-    ]
-)
+let language = ref( [
+  {
+    title: "O’zbek",
+    lang: uz,
+    checked: false,
+    route: '/'
+  },
+  {
+    title: "Русский",
+    lang: ru,
+    checked: false,
+    route: '/'
+  },
+  {
+    title: "English",
+    lang: eng,
+    checked: false,
+    route: '/'
+  }
+] )
 
-let langChange = (index) => {
-  language.value.forEach((item, idx) => {
+let langChange = ( index ) => {
+  language.value.forEach( ( item, idx ) => {
     item.checked = idx === index;
-  });
+  } );
 
   window.location.href = language.value[index].route;
-  localStorage.setItem('selectedLanguage', JSON.stringify(language.value[index]));
+  localStorage.setItem( 'selectedLanguage', JSON.stringify( language.value[index] ) );
 }
 
 let langChecker = () => {
-  getterLang.value = JSON.parse(localStorage.getItem('selectedLanguage'));
-  language.value.forEach((item) => {
+  getterLang.value = JSON.parse( localStorage.getItem( 'selectedLanguage' ) );
+  language.value.forEach( ( item ) => {
     item.checked = item.title === getterLang.value.title;
-  });
+  } );
 }
 
-onMounted(() => {
+onMounted( () => {
   langChecker()
-})
+} )
 
 </script>
