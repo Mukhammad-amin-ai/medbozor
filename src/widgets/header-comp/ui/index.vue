@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <Header/>
-    <div class="hidden xl:block">
+    <div class="block">
       <HeaderNavigation/>
     </div>
   </div>

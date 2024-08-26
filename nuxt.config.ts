@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     modules: ['nuxt-swiper', "nuxt-easy-lightbox"],
     alias: {
-        "@": '../src'
+        "@": '/src'
     },
     devtools: {enabled: true},
     css: ['@/app/styles/index.css'],
