@@ -15,33 +15,24 @@
     </div>
     <div class="mt-8">
       <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center bg-white rounded-lg" >
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center bg-white rounded-lg">
           <li class="me-2" role="presentation">
             <nuxt-link to="/profile/settings">
-              <button :class="ActiveClassP" @click="profile"
-                      class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
-                      data-tabs-target="#profile"
-                      type="button" role="tab" aria-controls="profile" aria-selected="true">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" :class="settings">
                 Profil
               </button>
             </nuxt-link>
           </li>
           <li class="me-2" role="presentation">
             <nuxt-link to="/profile/history">
-              <button :class="ActiveClassSh" @click="shop"
-                      class="inline-block p-4 border-b-2 rounded-t-lg "
-                      id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
-                      aria-controls="dashboard"
-                      aria-selected="false">Xaridlar tarixi
+              <button class="inline-block p-4 border-b-2 rounded-t-lg " :class="history">
+                Xaridlar tarixi
               </button>
             </nuxt-link>
           </li>
           <li class="me-2" role="presentation">
             <nuxt-link to="/profile/favorite">
-              <button :class="ActiveClassF" @click="favorite"
-                      class="inline-block p-4 border-b-2 rounded-t-lg"
-                      id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
-                      aria-selected="false">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" :class="favorite">
                 Sevimli mahsulotlar
               </button>
             </nuxt-link>
@@ -53,46 +44,25 @@
     </div>
   </div>
 </template>
-
 <script setup>
+import { onMounted } from "vue";
 import { LogOut } from "@/shared/utils/images";
+import { useRoute } from "vue-router";
 
-let ProfileActive = ref( false )
-let ShopActive = ref( false )
-let FavoriteActive = ref( false )
 
-let ActiveClassP = ref( "border-b-[#1272CC] text-[#1272CC]" )
-let ActiveClassSh = ref( "" )
-let ActiveClassF = ref( "" )
+let settings = ref( '' )
+let history = ref( '' )
+let favorite = ref( '' )
 
-let profile = () => {
-  ActiveClassP.value = "border-b-[#1272CC] text-[#1272CC]"
-  ActiveClassSh.value = ""
-  ActiveClassF.value = ""
-  ProfileActive.value = false
-  ShopActive.value = true
-  FavoriteActive.value = false
-}
+const route = useRoute()
 
-let shop = () => {
-  ActiveClassP.value = ""
-  ActiveClassSh.value = "border-b-[#1272CC] text-[#1272CC]"
-  ActiveClassF.value = ""
-  ProfileActive.value = false
-  ShopActive.value = true
-  FavoriteActive.value = false
-}
-
-let favorite = () => {
-  ActiveClassP.value = ""
-  ActiveClassSh.value = ""
-  ActiveClassF.value = "border-b-[#1272CC] text-[#1272CC]"
-  ProfileActive.value = false
-  ShopActive.value = false
-  FavoriteActive.value = true
-}
+onMounted( () => {
+  if (route.path === '/profile/settings') {
+    settings.value = 'border-b-[#1272CC] text-[#1272CC]'
+  } else if (route.path === '/profile/history') {
+    history.value = 'border-b-[#1272CC] text-[#1272CC]'
+  } else if (route.path === '/profile/favorite') {
+    favorite.value = 'border-b-[#1272CC] text-[#1272CC]'
+  }
+} )
 </script>
-
-<style scoped>
-
-</style>
