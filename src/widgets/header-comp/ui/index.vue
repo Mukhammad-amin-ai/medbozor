@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <Header/>
-    <div class="block">
+    <div class="invisible h-0 lg:h-auto lg:visible md:block">
       <HeaderNavigation/>
     </div>
   </div>
