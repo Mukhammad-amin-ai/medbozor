@@ -41,6 +41,7 @@ import facebook from './icons/facebook.svg'
 import instagram from './icons/instagram.svg'
 import mapLocation from './icons/map-location.svg'
 import massage from './icons/massage.svg'
+import menu from './icons/menu.svg'
 import telegram from './icons/telegram.svg'
 import tikTok from './icons/tik-tok.svg'
 import LogoFooter from './logo/LogoFooter.svg'
@@ -56,6 +57,7 @@ import TermMini from './products/term-mini.svg'
 import SearchImg from './img/search.svg'
 
 export {
+    menu,
     SearchImg,
     stars,
     TermMini,

@@ -30,7 +30,6 @@
             </li>
           </ul>
         </div>
-        <!-- Search-Bar -->
         <form class="max-w-md mx-auto">
           <label for="default-search"
                  class="mb-2 text-sm font-medium  sr-only">Search</label>
