@@ -2,16 +2,16 @@
   <div class="border-b border-gray-200">
     <BaseDiv class="invisible h-0 lg:h-auto lg:visible lg:flex py-0 px-0 lg:py-3 lg:px-3 justify-between items-center">
       <div class="items-center gap-2 text-[#9DADCB] invisible h-0 lg:h-auto lg:visible lg:flex">
-        <img :src="call" alt="call-icon">
+        <call/>
         +998901013636
       </div>
       <div class="gap-6 invisible h-0 lg:h-auto lg:visible lg:flex">
         <button class="flex items-center gap-2 text-[#9DADCB]">
-          <img :src="shipping" alt="shipping">
+          <shipping/>
           Buyurtmani kuzatish
         </button>
         <button class="flex items-center gap-2 text-[#9DADCB]">
-          <img :src="heart" alt="heart">
+          <heart/>
           Wishlist
         </button>
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
@@ -43,11 +43,11 @@
       </div>
     </BaseDiv>
     <div class="visible flex px-6  py-3 lg:px-0 lg:py-0 lg:invisible justify-between h-auto lg:h-0">
-      <img :src="logo" alt="logo">
+      <logo/>
       <div class="flex items-center gap-6">
         <button
             class="relative inline-flex items-center p-2 text-sm font-medium text-center text-black bg-transparent ">
-
+          <cart class="fill-black stroke-black text-black"/>
           <span class="sr-only">Notifications</span>
           <div
               class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">

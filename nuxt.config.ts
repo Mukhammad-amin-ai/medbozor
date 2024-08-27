@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
-    modules: ['nuxt-swiper', "nuxt-easy-lightbox"],
+    modules: ['nuxt-swiper', "nuxt-easy-lightbox",'nuxt-svgo-loader'],
     alias: {
-        "@": '../src'
+        "@": '/src'
     },
     devtools: {enabled: true},
     css: ['@/app/styles/index.css'],
