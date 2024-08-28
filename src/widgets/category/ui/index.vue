@@ -8,7 +8,7 @@
       <div class=" w-[425px] h-[240px] rounded-[20px] pt-10 px-5 pb-2 flex bg-no-repeat bg-contain"
            v-for="(item,index) in showedObj"
            :key="index"
-           :style="{ backgroundImage: `url('_nuxt/src/shared/utils/images/category/${item.bg}')`}">
+           :style="{ backgroundImage: `url('https://medbozor.vercel.app/images/category/${item.bg}')`}">
         <div class="w-[50%]">
           <div class="font-semibold text-[24px]"> {{ item.title }}</div>
           <button class="underline uppercase mt-5">Shop now +</button>
