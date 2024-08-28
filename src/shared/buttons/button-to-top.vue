@@ -1,5 +1,5 @@
 <template>
-  <button @click="toTop" class="rounded-[50%] w-[60px] h-[60px] flex items-center justify-center bg-[#1272CC] fixed bottom-2 right-2">
+  <button @click="toTop" class="rounded-[50%] z-10 w-[60px] h-[60px] flex items-center justify-center bg-[#1272CC] fixed bottom-2 right-2">
     <img :src="arrowTop" alt="">
   </button>
 </template>

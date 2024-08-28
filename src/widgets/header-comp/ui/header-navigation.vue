@@ -5,7 +5,7 @@
         <img :src="logo" alt="">
       </NuxtLink>
     </div>
-    <div class="flex items-center gap-24">
+    <div class="flex items-center gap-5 xl:gap-24">
       <div class="flex items-center gap-5">
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown-category"
                 class="text-[#023E7D] flex items-center gap-1" type="button">
