@@ -61,92 +61,92 @@ let showedObj = ref([])
 const category = ref([
   {
     title: 'Tibbiy kiyim',
-    bg: 'category-bg-1.svg',
+    bg: 'categoryBg1.svg',
     img: catProduct1
   },
   {
     title: 'Jarrohlik va reanimatsiya',
-    bg: 'category-bg-3.svg',
+    bg: 'categoryBg3.svg',
     img: catProduct2
   },
   {
     title: 'Fizioterapiya va reobilitatsiya',
-    bg: 'category-bg-6.svg',
+    bg: 'categoryBg6.svg',
     img: catProduct3
   },
   {
     title: 'Funktsional diagnostika',
-    bg: 'category-bg-4.svg',
+    bg: 'categoryBg4.svg',
     img: catProduct4
   },
   {
     title: 'Akusherlik va ginekologiya',
-    bg: 'category-bg-7.svg',
+    bg: 'categoryBg7.svg',
     img: catProduct5
   },
   {
     title: 'Oftalmologiya',
-    bg: 'category-bg-1.svg',
+    bg: 'categoryBg1.svg',
     img: catProduct6
   },
   {
     title: 'Laboratoriya',
-    bg: 'category-bg-6.svg',
+    bg: 'categoryBg6.svg',
     img: catProduct7
   },
   {
     title: 'Neonatologiya',
-    bg: 'category-bg-4.svg',
+    bg: 'categoryBg4.svg',
     img: catProduct8
   },
   {
     title: 'Otorinolaringologiya',
-    bg: 'category-bg-3.svg',
+    bg: 'categoryBg3.svg',
     img: catProduct9
   },
   {
     title: 'Rentgen va tomografiya',
-    bg: 'category-bg-2.svg',
+    bg: 'categoryBg2.svg',
     img: catProduct10
   },
   {
     title: 'Stomatologiya',
-    bg: 'category-bg-5.svg',
+    bg: 'categoryBg5.svg',
     img: catProduct11
   },
   {
     title: 'Sterilizatsiya va dezinfeksiya',
-    bg: 'category-bg-4.svg',
+    bg: 'categoryBg4.svg',
     img: catProduct12
   },
   {
     title: 'Urologiya',
-    bg: 'category-bg-1.svg',
+    bg: 'categoryBg1.svg',
     img: catProduct13
   },
   {
     title: 'Kosmetologiya',
-    bg: 'category-bg-7.svg',
+    bg: 'categoryBg7.svg',
     img: catProduct14
   },
   {
     title: 'Tibbiy mebel',
-    bg: 'category-bg-4.svg',
+    bg: 'categoryBg4.svg',
     img: catProduct15
   },
   {
     title: 'O’lchov uskunalari',
-    bg: 'category-bg-7.svg',
+    bg: 'categoryBg7.svg',
     img: catProduct16
   },
   {
     title: 'Tibbiy ta’lim',
-    bg: 'category-bg-6.svg',
+    bg: 'categoryBg6.svg',
     img: catProduct17
   },
   {
     title: 'Travmatologiya va ortopediya',
-    bg: 'category-bg-3.svg',
+    bg: 'categoryBg3.svg',
     img: catProduct18
   }
 ])
