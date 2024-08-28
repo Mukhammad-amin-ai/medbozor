@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     alias: {
         "@": '/src'
     },
-    devtools: {enabled: true},
+    devtools: {enabled: false},
     css: ['@/app/styles/index.css'],
     dir: {
         pages: './src/app/routes',

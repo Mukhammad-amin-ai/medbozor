@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#E4E9F1]  mt-10">
-    <div class="2xl:w-[1440px] py-[60px]  mx-auto px-3 2xl:px-[100px] ">
-      <div class="flex items-start justify-between">
+  <div class="bg-[#E4E9F1] mt-10">
+    <div class="2xl:w-[1440px] py-[60px] mx-auto px-3 2xl:px-[100px] ">
+      <div class="gap-3 md:gap-0 flex-col md:flex-row flex items-start justify-between">
         <div>
           <div>
             <img :src="LogoFooter" alt="">
@@ -112,5 +112,5 @@
 
 <script setup>
 import { LogoFooter } from '@/shared/utils/images'
-import { tikTok, telegram, instagram, facebook, massage, mapLocation, callFooter} from '@/shared/utils/images'
+import { tikTok, telegram, instagram, facebook, massage, mapLocation, callFooter } from '@/shared/utils/images'
 </script>
