@@ -4,3 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.custom-hidden{
+    display: none;
+}
