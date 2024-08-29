@@ -15,6 +15,4 @@
 import { Header, Swiper, Category, MostSold, Footer } from "@/widgets";
 import { Adds, AddsSecond } from '@/shared/adds'
 import { ButtonToTop } from '@/shared/buttons'
-
-
 </script>

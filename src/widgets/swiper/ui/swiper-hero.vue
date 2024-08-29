@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#F6F9FE]">
     <div class="2xl:w-[1440px] mx-auto p-5 md:p-0">
-      <form class="max-w-md mx-auto md:hidden">
+      <form class=" max-w-md mx-auto md:hidden">
         <label for="default-search"
                class=" mb-2 text-sm font-medium  sr-only">Search</label>
         <div class="relative">
@@ -9,7 +9,7 @@
             <img :src="search" alt="">
           </div>
           <input type="search" id="default-search"
-                 class=" w-[400px] h-[35px] p-4 ps-10 text-[#9DADCB] placeholder:text-[#9DADCB] border border-[#E4E9F1]  rounded-md  "
+                 class=" w-full md:w-[400px] h-[35px] p-4 ps-10 text-[#9DADCB] placeholder:text-[#9DADCB] border border-[#E4E9F1]  rounded-md  "
                  placeholder="Qidirish matni" required/>
         </div>
       </form>
@@ -109,18 +109,19 @@ let modules = ref( [ Navigation, Pagination, Mousewheel, Keyboard ] )
   border-radius: 0 !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .swiper-pagination {
     display: none !important;
   }
 
   .swiper-button-next {
     top: 95% !important;
+    right: 3vw !important;
   }
 
   .swiper-button-prev {
     top: 95% !important;
-    left: 80% !important;
+    left: calc(100% - 20vw) !important;
   }
 
   .swiper-slide {

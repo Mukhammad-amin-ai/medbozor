@@ -1,16 +1,20 @@
 <template>
   <div class="2xl:w-[1440px] mx-auto  px-3 py-3 2xl:px-12 mt-10 relative">
-    <div class="text-center font-medium text-3xl">
+    <div class="text-center font-medium text-3xl" @click="widthCalc">
       Bo’limlar
     </div>
-    <div class="flex gap-8 mt-11 items-center flex-wrap">
-      <!-- Item of Product Category -->
-      <div class=" w-[425px] h-[240px] rounded-[20px] pt-10 px-5 pb-2 flex bg-no-repeat bg-contain"
-           v-for="(item,index) in showedObj"
-           :key="index"
-           :style="{ backgroundImage: `url('https://medbozor.vercel.app/images/category/${item.bg}')`}">
-        <div class="w-[50%]">
-          <div class="font-semibold text-[24px]"> {{ item.title }}</div>
+    <div class="flex gap-8 mt-11 items-center flex-wrap justify-center">
+      <div
+          class="w-[168px] h-[238px] md:w-[425px] md:h-[240px] rounded-[20px] pt-6 md:pt-10 px-4  md:px-5 pb-2 flex-col md:flex-row flex items-end md:items-start bg-no-repeat bg-contain"
+          v-for="(item,index) in showedObj"
+          :key="index"
+          :style="{
+           backgroundImage: md
+            ? `url('https://medbozor.vercel.app/images/category/${item.bg}')`
+            : `url('https://medbozor.vercel.app/images/category/${item.sm}')`
+           }">
+        <div class="w-full md:w-[50%]">
+          <div class="font-semibold text-[18px  ] md:text-[24px]"> {{ item.title }}</div>
           <button class="underline uppercase mt-5">Shop now +</button>
         </div>
         <div class="w-[50%] flex items-center justify-center">
@@ -49,115 +53,141 @@ import {
   catProduct18
 } from '@/shared/utils/images/index.js'
 
-let hide = ref(false)
+let hide = ref( false )
 
 let hideButton = () => {
   hide.value = !hide.value
   showedObj.value = category.value
 }
 
-let showedObj = ref([])
+let showedObj = ref( [] )
 
-const category = ref([
+const category = ref( [
   {
     title: 'Tibbiy kiyim',
     bg: 'categoryBg1.svg',
-    img: catProduct1
+    img: catProduct1,
+    sm: 'categoryBg1Sm.svg'
   },
   {
     title: 'Jarrohlik va reanimatsiya',
     bg: 'categoryBg3.svg',
-    img: catProduct2
+    img: catProduct2,
+    sm: 'categoryBg3Sm.svg'
   },
   {
     title: 'Fizioterapiya va reobilitatsiya',
     bg: 'categoryBg6.svg',
-    img: catProduct3
+    img: catProduct3,
+    sm: 'categoryBg6Sm.svg'
   },
   {
     title: 'Funktsional diagnostika',
     bg: 'categoryBg4.svg',
-    img: catProduct4
+    img: catProduct4,
+    sm: 'categoryBg4Sm.svg'
   },
   {
     title: 'Akusherlik va ginekologiya',
     bg: 'categoryBg7.svg',
-    img: catProduct5
+    img: catProduct5,
+    sm: 'categoryBg7Sm.svg'
   },
   {
     title: 'Oftalmologiya',
     bg: 'categoryBg1.svg',
-    img: catProduct6
+    img: catProduct6,
+    sm: 'categoryBg1Sm.svg'
   },
   {
     title: 'Laboratoriya',
     bg: 'categoryBg6.svg',
-    img: catProduct7
+    img: catProduct7,
+    sm: 'categoryBg6Sm.svg'
   },
   {
     title: 'Neonatologiya',
     bg: 'categoryBg4.svg',
-    img: catProduct8
+    img: catProduct8,
+    sm: 'categoryBg4Sm.svg'
   },
   {
     title: 'Otorinolaringologiya',
     bg: 'categoryBg3.svg',
-    img: catProduct9
+    img: catProduct9,
+    sm: 'categoryBg3Sm.svg'
   },
   {
     title: 'Rentgen va tomografiya',
     bg: 'categoryBg2.svg',
-    img: catProduct10
+    img: catProduct10,
+    sm: 'categoryBg2Sm.svg'
   },
   {
     title: 'Stomatologiya',
     bg: 'categoryBg5.svg',
-    img: catProduct11
+    img: catProduct11,
+    sm: 'categoryBg5Sm.svg'
   },
   {
     title: 'Sterilizatsiya va dezinfeksiya',
     bg: 'categoryBg4.svg',
-    img: catProduct12
+    img: catProduct12,
+    sm: 'categoryBg4Sm.svg'
   },
   {
     title: 'Urologiya',
     bg: 'categoryBg1.svg',
-    img: catProduct13
+    img: catProduct13,
+    sm: 'categoryBg1Sm.svg'
   },
   {
     title: 'Kosmetologiya',
     bg: 'categoryBg7.svg',
-    img: catProduct14
+    img: catProduct14,
+    sm: 'categoryBg7Sm.svg'
   },
   {
     title: 'Tibbiy mebel',
     bg: 'categoryBg4.svg',
-    img: catProduct15
+    img: catProduct15,
+    sm: 'categoryBg4Sm.svg'
   },
   {
     title: 'O’lchov uskunalari',
     bg: 'categoryBg7.svg',
-    img: catProduct16
+    img: catProduct16,
+    sm: 'categoryBg7Sm.svg'
   },
   {
     title: 'Tibbiy ta’lim',
     bg: 'categoryBg6.svg',
-    img: catProduct17
+    img: catProduct17,
+    sm: 'categoryBg6Sm.svg'
   },
   {
     title: 'Travmatologiya va ortopediya',
     bg: 'categoryBg3.svg',
-    img: catProduct18
+    img: catProduct18,
+    sm: 'categoryBg3Sm.svg'
   }
-])
+] )
 
 let filter = () => {
-  showedObj.value = category.value.slice(0, 9)
+  showedObj.value = category.value.slice( 0, 9 )
 }
 
-onMounted(() => {
+let widthCalc = () => {
+  console.log( window.innerWidth )
+}
+
+
+let md = ref( false )
+
+onMounted( () => {
+  md.value = window.innerWidth > 768;
   filter()
-})
+} )
 
 </script>
 
