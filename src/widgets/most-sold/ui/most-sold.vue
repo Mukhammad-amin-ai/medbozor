@@ -4,7 +4,7 @@
       <div class="font-semibold text-3xl">Eng ko’p sotiladigan mahsulotlar</div>
       <div class="mt-5">Hozir Medbozorda eng ko'p sotiladigan mahsulotlarimizni ko'ring.</div>
     </div>
-    <div class="mt-5 flex items-center justify-between flex-wrap gap-5">
+    <div class="mt-5 flex items-center justify-center flex-wrap gap-5">
       <ProductItem v-for="(item,index) in products"
                    :key="index"
                    :title="item.title"
