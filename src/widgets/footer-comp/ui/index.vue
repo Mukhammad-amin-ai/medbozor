@@ -1,8 +1,8 @@
 <template>
   <div class="bg-[#E4E9F1] mt-10">
     <div class="2xl:w-[1440px] py-[60px] mx-auto px-3 2xl:px-[100px] ">
-      <div class="gap-3 md:gap-0 flex-col md:flex-row flex items-start justify-between">
-        <div>
+      <div class="gap-3 md:gap-0 flex-col sm:flex-row flex flex-wrap items-start justify-start  md:justify-between">
+        <div class="p-2">
           <div>
             <img :src="LogoFooter" alt="">
           </div>
@@ -29,7 +29,7 @@
             </button>
           </div>
         </div>
-        <div>
+        <div class="p-2">
           <div class="text-[#001233] font-semibold text-[20px]">
             About us
           </div>
@@ -47,8 +47,8 @@
               Subcategory 4
             </li>
           </ul>
-        </div>
-        <div>
+        </div >
+        <div class="p-2">
           <div class="text-[#001233] font-semibold text-[20px]">
             Categories
           </div>
@@ -70,7 +70,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="p-2">
           <div class="text-[#001233] font-semibold text-[20px]">
             Contact us
           </div>
