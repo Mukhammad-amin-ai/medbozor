@@ -67,109 +67,109 @@ const category = ref( [
     title: 'Tibbiy kiyim',
     bg: 'categoryBg1.svg',
     img: catProduct1,
-    sm: 'categoryBg1Sm.svg'
+    sm: 'CategoryBg1Sm.svg'
   },
   {
     title: 'Jarrohlik va reanimatsiya',
     bg: 'categoryBg3.svg',
     img: catProduct2,
-    sm: 'categoryBg3Sm.svg'
+    sm: 'CategoryBg3Sm.svg'
   },
   {
     title: 'Fizioterapiya va reobilitatsiya',
     bg: 'categoryBg6.svg',
     img: catProduct3,
-    sm: 'categoryBg6Sm.svg'
+    sm: 'CategoryBg6Sm.svg'
   },
   {
     title: 'Funktsional diagnostika',
     bg: 'categoryBg4.svg',
     img: catProduct4,
-    sm: 'categoryBg4Sm.svg'
+    sm: 'CategoryBg4Sm.svg'
   },
   {
     title: 'Akusherlik va ginekologiya',
     bg: 'categoryBg7.svg',
     img: catProduct5,
-    sm: 'categoryBg7Sm.svg'
+    sm: 'CategoryBg7Sm.svg'
   },
   {
     title: 'Oftalmologiya',
     bg: 'categoryBg1.svg',
     img: catProduct6,
-    sm: 'categoryBg1Sm.svg'
+    sm: 'CategoryBg1Sm.svg'
   },
   {
     title: 'Laboratoriya',
     bg: 'categoryBg6.svg',
     img: catProduct7,
-    sm: 'categoryBg6Sm.svg'
+    sm: 'CategoryBg6Sm.svg'
   },
   {
     title: 'Neonatologiya',
     bg: 'categoryBg4.svg',
     img: catProduct8,
-    sm: 'categoryBg4Sm.svg'
+    sm: 'CategoryBg4Sm.svg'
   },
   {
     title: 'Otorinolaringologiya',
     bg: 'categoryBg3.svg',
     img: catProduct9,
-    sm: 'categoryBg3Sm.svg'
+    sm: 'CategoryBg3Sm.svg'
   },
   {
     title: 'Rentgen va tomografiya',
     bg: 'categoryBg2.svg',
     img: catProduct10,
-    sm: 'categoryBg2Sm.svg'
+    sm: 'CategoryBg2Sm.svg'
   },
   {
     title: 'Stomatologiya',
     bg: 'categoryBg5.svg',
     img: catProduct11,
-    sm: 'categoryBg5Sm.svg'
+    sm: 'CategoryBg5Sm.svg'
   },
   {
     title: 'Sterilizatsiya va dezinfeksiya',
     bg: 'categoryBg4.svg',
     img: catProduct12,
-    sm: 'categoryBg4Sm.svg'
+    sm: 'CategoryBg4Sm.svg'
   },
   {
     title: 'Urologiya',
     bg: 'categoryBg1.svg',
     img: catProduct13,
-    sm: 'categoryBg1Sm.svg'
+    sm: 'CategoryBg1Sm.svg'
   },
   {
     title: 'Kosmetologiya',
     bg: 'categoryBg7.svg',
     img: catProduct14,
-    sm: 'categoryBg7Sm.svg'
+    sm: 'CategoryBg7Sm.svg'
   },
   {
     title: 'Tibbiy mebel',
     bg: 'categoryBg4.svg',
     img: catProduct15,
-    sm: 'categoryBg4Sm.svg'
+    sm: 'CategoryBg4Sm.svg'
   },
   {
     title: 'O’lchov uskunalari',
     bg: 'categoryBg7.svg',
     img: catProduct16,
-    sm: 'categoryBg7Sm.svg'
+    sm: 'CategoryBg7Sm.svg'
   },
   {
     title: 'Tibbiy ta’lim',
     bg: 'categoryBg6.svg',
     img: catProduct17,
-    sm: 'categoryBg6Sm.svg'
+    sm: 'CategoryBg6Sm.svg'
   },
   {
     title: 'Travmatologiya va ortopediya',
     bg: 'categoryBg3.svg',
     img: catProduct18,
-    sm: 'categoryBg3Sm.svg'
+    sm: 'CategoryBg3Sm.svg'
   }
 ] )
 
