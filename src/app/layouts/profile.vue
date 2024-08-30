@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F6F9FE] h-[100vh] relative">
+  <div class="bg-[#F6F9FE] h-auto relative">
     <Header/>
     <BaseDiv>
       <Breadcrumbs title="Med bozor" subtitle="Mening profilim"/>

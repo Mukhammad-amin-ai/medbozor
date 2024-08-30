@@ -1,9 +1,9 @@
 <template>
-  <div class="2xl:w-[1440px] mx-auto  px-3 py-3 2xl:px-12 mt-10 relative">
+  <div class="2xl:w-[1440px] mx-auto sm:px-3 sm:py-3 2xl:px-12 mt-10 relative">
     <div class="text-center font-medium text-3xl" @click="widthCalc">
       Bo’limlar
     </div>
-    <div class="flex gap-8 mt-11 items-center flex-wrap justify-center">
+    <div class="flex gap-4 sm:gap-8 mt-11 items-center flex-wrap justify-center">
       <div
           class="w-[168px] h-[238px] md:w-[425px] md:h-[240px] rounded-[20px] pt-6 md:pt-10 px-4  md:px-5 pb-2 flex-col md:flex-row flex items-end justify-between md:items-start bg-no-repeat bg-contain"
           v-for="(item,index) in showedObj"
@@ -14,7 +14,7 @@
             : `url('https://medbozor.vercel.app/images/category/${item.sm}')`
            }">
         <div class="w-full md:w-[50%]">
-          <div class="font-semibold text-[18px  ] md:text-[24px]"> {{ item.title }}</div>
+          <div class="font-semibold text-[18px] md:text-[24px]"> {{ item.title }}</div>
           <button class="underline uppercase mt-5">Shop now +</button>
         </div>
         <div class="w-[65%] md:w-[50%] flex items-center justify-center">

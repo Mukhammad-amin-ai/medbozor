@@ -43,7 +43,9 @@
       </div>
     </BaseDiv>
     <div class="visible flex px-6  py-3 lg:px-0 lg:py-0 lg:invisible justify-between h-auto lg:h-0">
-      <img :src="logo" alt="img"/>
+      <nuxt-link to="/">
+        <img :src="logo" alt="img"/>
+      </nuxt-link>
       <div class="flex items-center gap-5">
         <div class="relative inline-flex items-center p-1 text-sm font-medium text-center text-black bg-transparent ">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

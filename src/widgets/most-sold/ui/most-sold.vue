@@ -12,6 +12,8 @@
                    :price="item.price"
                    :discount="item.discount"
                    :has-discount="item.hasDiscount"
+                   :cart="true"
+                   :favorite="true"
       />
     </div>
     <div class="flex items-center justify-center">

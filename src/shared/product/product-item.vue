@@ -1,6 +1,6 @@
 <template>
   <div class=" w-[155px] md:w-[280px] h-[310px] md:h-[445px] relative">
-    <div
+    <div v-if="favorite"
         class="w-[24px] md:w-[40px] h-[24px] md:h-[40px] rounded-full flex items-center justify-center absolute top-3 right-3 bg-white cursor-pointer">
       <svg class="w-[12px] md:w-[20px] h-[10px] md:h-[20px]" viewBox="0 0 12 10" fill="none"
            xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@
       <div class="text-[#1272CC] text-[14px] md:text-[16px] font-medium">{{ price }} so’m</div>
       <div class="line-through text-[12px] md:text-[16px]" v-if="hasDiscount">{{ discount }} so’m</div>
     </div>
-    <div
+    <div v-if="cart"
         class="w-[24px] md:w-[40px] h-[24px] md:h-[40px] rounded-full flex items-center justify-center absolute border bottom-[30%] md:bottom-[15%] right-3 bg-white cursor-pointer">
       <svg class="w-[12px] md:w-[20px] h-[10px] md:h-[20px]" viewBox="0 0 14 14" fill="none"
            xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +42,8 @@ defineProps( {
   img: String,
   price: String,
   discount: String,
-  hasDiscount: Boolean
+  hasDiscount: Boolean,
+  cart:Boolean,
+  favorite:Boolean
 } )
 </script>
