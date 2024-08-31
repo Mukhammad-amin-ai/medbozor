@@ -55,8 +55,16 @@ import Thermometr from './products/termometr.svg'
 import stars from './icons/stars.svg'
 import TermMini from './products/term-mini.svg'
 import SearchImg from './img/search.svg'
+import CartAdd from './icons/cart-add.svg'
+import CloseContract from './icons/close-contract.svg'
+import CommentAdd from './icons/comment-add.svg'
+import ArrowBackSmall from './icons/arrow-back-small.svg'
 
 export {
+    ArrowBackSmall,
+    CartAdd,
+    CloseContract,
+    CommentAdd,
     menu,
     SearchImg,
     stars,

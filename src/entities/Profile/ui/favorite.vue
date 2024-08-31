@@ -1,6 +1,6 @@
 <template>
-  <!--  <FavNotfound/>-->
-  <div class="mt-5 flex items-center justify-center flex-wrap gap-5">
+    <FavNotfound v-if="data" />
+  <div class="mt-5 flex items-center justify-center flex-wrap gap-5" v-else>
     <ProductItem v-for="(item,index) in products"
                  :key="index"
                  :title="item.title"
@@ -18,6 +18,8 @@
 import { FavNotfound } from "@/shared/not-found";
 import { ProductItem } from "@/shared/product";
 import { productItem } from "@/shared/utils/images/index.js";
+
+let data = ref(false)
 
 const products = ref( [
   {
@@ -105,5 +107,4 @@ const products = ref( [
     hasDiscount: false
   }
 ] )
-
 </script>

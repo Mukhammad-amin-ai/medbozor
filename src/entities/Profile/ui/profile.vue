@@ -64,5 +64,8 @@ onMounted( () => {
   } else if (route.path === '/profile/favorite') {
     favorite.value = 'border-b-[#1272CC] text-[#1272CC]'
   }
+  if (route.matched[0].name === "profile-history-id") {
+    history.value = 'border-b-[#1272CC] text-[#1272CC]'
+  }
 } )
 </script>

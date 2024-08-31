@@ -23,11 +23,11 @@
 </template>
 
 <script setup>
-import { Button } from "@/shared/buttons/index.js";
-import { ProductItem } from "@/shared/product/index.js";
-import { productItem } from '@/shared/utils/images/index.js'
+import { Button } from "@/shared/buttons";
+import { ProductItem } from "@/shared/product";
+import { productItem } from '@/shared/utils/images'
 
-const products = ref([
+const products = ref( [
   {
     title: 'Tibbiy forma',
     img: productItem,
@@ -112,10 +112,5 @@ const products = ref([
     discount: '256 000',
     hasDiscount: false
   }
-])
-
+] )
 </script>
-
-<style scoped>
-
-</style>
